@@ -4,7 +4,7 @@
 <!-- Container Fluid-->
 <div class="container-fluid" id="container-wrapper">
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Add New Tracker</h1>
+        <h1 class="h3 mb-0 text-gray-800">Make An Order</h1>
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="../../..">Home</a></li>
             <li class="breadcrumb-item">Register</li>
@@ -24,26 +24,13 @@
                         </p>
                         <form class="forms-sample">
                             <div class="form-group row">
-                                <label for="exampleInputUsername2" class="col-sm-3 col-form-label">IMEI Number</label>
+                                <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Tracker Type</label>
                                 <div class="col-sm-9">
-                                    <input type="text" class="form-control" id="exampleInputUsername2" placeholder="IMEI">
+                                    <input type="text" class="form-control" id="exampleInputUsername2" placeholder="Laptop">
                                 </div>
                             </div>
 
 
-
-
-
-                                <div class="form-group row">
-                                    <label for="exampleInputMobile" class="col-sm-3 col-form-label">Type</label>
-                                    <div class="col-sm-9">
-                                        <select class="form-control">
-                                            <option>Laptops</option>
-                                            <option>Printers</option>
-                                            <option>Pets</option>
-                                        </select>
-                                    </div>
-                                </div>
 
 
                             <div class="form-group row">
@@ -59,19 +46,27 @@
 
 
                             <div class="form-group row">
-                                <label for="exampleInputMobile" class="col-sm-3 col-form-label">Passwords</label>
+                                <label for="exampleInputMobile" class="col-sm-3 col-form-label">Quantity</label>
                                 <div class="col-sm-9">
-                                    <input type="password" class="form-control" id="exampleInputMobile" placeholder="Passwords">
+                                    <input type="number" class="form-control" id="exampleInputMobile" placeholder="4 Trackers">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="exampleInputPassword2" class="col-sm-3 col-form-label">Buy Price</label>
+                                <label for="exampleInputPassword2" class="col-sm-3 col-form-label">Amount</label>
                                 <div class="col-sm-9">
-                                    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Price">
+                                    <input type="text" class="form-control" id="exampleInputPassword2" placeholder="R2 000">
                                 </div>
                             </div>
 
-                            <button type="submit" class="btn btn-primary mr-2">Add Tracker</button>
+
+                            <div class="form-group row">
+                                <label for="exampleInputPassword2" class="col-sm-3 col-form-label">Shipping Fee</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="exampleInputPassword2" placeholder="R600">
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary mr-2">Add Order</button>
                             <button class="btn btn-light">Cancel</button>
                         </form>
                     </div>

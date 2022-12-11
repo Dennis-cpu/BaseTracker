@@ -37,6 +37,13 @@ router.get('/user-trackers', (req, res) => {
 
 })
 
+
+router.get('/remove-user', (req, res) => {
+    res.render(__dirname + '/../views/admin/pages/remove/user', {});
+
+})
+
+
 router.post('/register/user', (req, res)=>{
 
     const value = req.body
@@ -65,6 +72,13 @@ router.post('/register/user', (req, res)=>{
     //res.redirect('/')
     //console.log(val)
 })
+
+
+
+
+
+
+
 
 
 

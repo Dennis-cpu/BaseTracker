@@ -1,0 +1,76 @@
+<%- include('../includes/header.ejs') %>
+
+<main id="main" class="main">
+
+
+    <section class="section profile">
+        <div class="row justify-content-center">
+
+
+            <div class="col-xl-8">
+
+                <div class="card">
+                    <div class="card-body pt-3">
+                        <!-- Bordered Tabs -->
+                        <ul class="nav nav-tabs nav-tabs-bordered">
+
+                            <li class="nav-item">
+                                <a href="/profile/new-tracker" class='nav-link'>Overview</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="/update/new-tracker" class='nav-link'>Edit Tracker</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="/remove/new-tracker" class='nav-link active'>Remove Tracker</a>
+                            </li>
+
+                        </ul>
+
+                        <div class="tab-content pt-2">
+
+                            <div class="tab-pane fade show active profile-overview" id="profile-overview">
+
+                                <h5 class="card-title">Tracker Details</h5>
+
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-4 label ">IMEI</div>
+                                    <div class="col-lg-9 col-md-8">336584551485</div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-4 label">Password</div>
+                                    <div class="col-lg-9 col-md-8">123456</div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-4 label">Network Type</div>
+                                    <div class="col-lg-9 col-md-8">3G</div>
+                                </div>
+
+
+                            </div>
+
+
+
+                        </div><!-- End Bordered Tabs -->
+
+                        <div class="row justify-content-center">
+                            <div class="d-grid gap-2 mt-6">
+                                <button  class="btn btn-danger" type="button">Remove Tracker</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</main><!-- End #main -->
+
+<%- include('../includes/footer.ejs') %>

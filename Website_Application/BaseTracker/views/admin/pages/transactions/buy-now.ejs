@@ -1,0 +1,105 @@
+<%- include('../includes/header.ejs') %>
+
+<div class="container-fluid" id="container-wrapper">
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">Buy Tracker</h1>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../../..">Home</a></li>
+            <li class="breadcrumb-item">Register</li>
+            <li class="breadcrumb-item active" aria-current="page">New Tracker</li>
+        </ol>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12 mb-4">
+            <!-- Simple Tables -->
+            <div class="col-md-6 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Tracker Form</h4>
+                        <p class="card-description">
+                            Add New Tracker
+                        </p>
+                        <form class="forms-sample">
+                            <div class="form-group row">
+                                <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Tracker Type</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="exampleInputUsername2" placeholder="Laptop">
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="form-group row">
+                                <label for="exampleInputMobile" class="col-sm-3 col-form-label">Network</label>
+                                <div class="col-sm-9">
+                                    <select class="form-control">
+                                        <option>2G</option>
+                                        <option>3G</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+
+                            <div class="form-group row">
+                                <label for="exampleInputMobile" class="col-sm-3 col-form-label">Quantity</label>
+                                <div class="col-sm-9">
+                                    <input type="number" class="form-control" id="exampleInputMobile" placeholder="4 Trackers">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="exampleInputPassword2" class="col-sm-3 col-form-label">Amount</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="exampleInputPassword2" placeholder="R2 000">
+                                </div>
+                            </div>
+
+
+                            <div class="form-group row">
+                                <label for="exampleInputPassword2" class="col-sm-3 col-form-label">Shipping Fee</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="exampleInputPassword2" placeholder="R600">
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary mr-2">Add Order</button>
+                            <button class="btn btn-light">Cancel</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+    <!--Row-->
+
+    <!-- Modal Logout -->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelLogout"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabelLogout">Ohh No!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Are you sure you want to logout?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
+                    <a href="../../login.html" class="btn btn-primary">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!---Container Fluid-->
+</div>
+<%- include('../includes/footer.ejs') %>
